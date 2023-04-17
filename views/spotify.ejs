@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spotify</title>
+    <style>
+        #loading {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #loading img {
+            height: 50px;
+            width: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+        Redirecting
+    </div>
+
+    <script>
+        setTimeout(function () {
+            window.location.href = "https://open.spotify.com/playlist/37i9dQZF1DWVq1SXCH6uFn";
+        }, 5000);
+    </script>
+</body>
+
+</html>
